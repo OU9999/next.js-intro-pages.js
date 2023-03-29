@@ -1,11 +1,12 @@
 import MovieCard from "@/components/MovieCard";
 import { Grid, Text, VStack } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
-import Head from "next/head";
 
 export async function getServerSideProps() {
   const { results } = await (
-    await fetch("http://localhost:3000/api/movies")
+    await fetch(
+      "https://next-js-intro-pages-2vfwml7bs-ou9999.vercel.app/api/movies"
+    )
   ).json();
 
   return {
