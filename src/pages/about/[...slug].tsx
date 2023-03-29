@@ -25,7 +25,7 @@ interface IDetail {
 export async function getServerSideProps({ params }: IgetServerSideProps) {
   const id = params.slug[1];
   const response = await fetch(
-    `https://next-js-intro-pages-js.vercel.app/api/movies/${id}`
+    `https://next-js-intro-pages-js-ou9999.vercel.app/api/movies/${id}`
   );
   const detail = await response.json();
 

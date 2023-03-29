@@ -4,7 +4,7 @@ import { NextSeo } from "next-seo";
 
 export async function getServerSideProps() {
   const { results } = await (
-    await fetch("https://next-js-intro-pages-js.vercel.app/api/movies")
+    await fetch(`https://next-js-intro-pages-js-ou9999.vercel.app/api/movies`)
   ).json();
 
   return {
